@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=VT323&display=swap');
+
+html{
+    background-color:#333;
+    padding: 1rem;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+input{
+    background-Color: #333;
+    color: hsl(123, 93%, 49%);
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+    font-Family: monospace;
+    font-Size: 16px;
+    margin-Left: 5px;
+}
+
+.terminal{
+    white-space: pre-line;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.terminal input{
+    white-space: pre-line;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.terminal .output{
+    color: pink;
+
+}
+
+h1 {
+  font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+  }
+  
+  .about{
+    color: green;
+  }
+  .command-name {
+    color: #4CAF50; /* Green color */
+    font-weight: bold;
+  }
