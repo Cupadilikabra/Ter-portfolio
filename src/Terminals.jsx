@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import Skills1 from'./Skills1'
+import Skills1 from'./components/Skills1'
 function Terminals() {
   const [input, setInput] = useState('');
   const [commands, setCommands] = useState([]); // Store all executed commands and outputs
@@ -111,5 +111,7 @@ function Terminals() {
 const AboutMe = () => <div>About Me Content Here</div>;
 const Skills = () => <div>Skills Content Here</div>;
 const Contact = () => <div>Contact Content Here</div>;
+
+
 
 export default Terminals;

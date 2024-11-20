@@ -1,5 +1,5 @@
 
-function AboutMe (){
+function Commands (){
 
         const availableCommands = [
                 { name: 'about', description: 'Learn more about me and my background.' },
@@ -26,4 +26,4 @@ function AboutMe (){
 
 }
 
-export default AboutMe
+export default Commands

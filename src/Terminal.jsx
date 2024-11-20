@@ -1,6 +1,6 @@
 import './Terminal.css'
 import { useState,useRef, useEffect } from 'react'
-import AboutMe from './AboutMe'
+import AboutMe from './components/Commands'
 import Commands from './commands/Commands';
 
 function Terminal(){

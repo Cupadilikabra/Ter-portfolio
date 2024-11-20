@@ -1,0 +1,24 @@
+/* PalmTree.css or your main CSS file */
+
+/* Keyframe animation for color blinking */
+@keyframes colorBlink {
+    0% {
+      color: #66d9ef; /* Light cyan */
+    }
+    50% {
+      color: #ff69b4; /* Pink */
+    }
+    100% {
+      color: #66d9ef; /* Light cyan */
+    }
+  }
+  
+  /* Apply the animation to the palm tree */
+  .blinking-palm-tree {
+    animation: colorBlink 1s infinite; /* Blink every 1 second */
+  }
+  
+  .Art{
+    font-size: 400px;
+    color: red;
+  }

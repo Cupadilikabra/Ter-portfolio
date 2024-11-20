@@ -1,11 +1,14 @@
 
 import './App.css'
 import Terminal from './Terminal'
-import Terminals from './Terminals'
+import NewTerminal from './NewTerminal'
+import PalmArt from './components/PalmArt'
 
 function App() {
-    return(
-        <Terminals/>
+    return(<>
+         <NewTerminal/>
+      
+        </>
     )
 }
 
