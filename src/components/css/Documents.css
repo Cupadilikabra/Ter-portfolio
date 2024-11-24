@@ -1,0 +1,23 @@
+
+.column-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Number of columns */
+    gap: 5px;
+   
+ 
+    
+}
+
+
+.column-list li{
+    margin: 0;
+    padding: 2px 0;
+    line-height: 1.2;
+    list-style-position: inside;
+}
+
+.container {
+    width: 100%; 
+    max-width: 500px; 
+    margin: 5px  
+  }

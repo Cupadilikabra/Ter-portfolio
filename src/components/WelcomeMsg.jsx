@@ -7,13 +7,13 @@ function WelcomeMsg(){
               <div className="terminal-header">
                 Welcome to [Endijs Lacis]'s Portfolio Terminal!
               </div>
-              <div className="terminal-divider">---------------------------------------------------</div>
+              <div className="h-line">---------------------------------------------------</div>
               <div className="terminal-subheading">
                 Your one-stop digital space to explore my work, skills, and projects.
               </div>
               
               <div className="commands-box">
-                <div className="commands-header">
+                <div className="h-line">
                   +---------------------------+
                 </div>
                 <div className="commands-list">
@@ -30,18 +30,18 @@ function WelcomeMsg(){
                     <span className="command-name">'contact'</span>: Get in touch with me through email and social media.
                   </div>
                 </div>
-                <div className="commands-footer">
+                <div className="h-line">
                   +---------------------------+
                 </div>
               </div>
         
               <div className="terminal-footer">
-                Type 'help' to see a list of available commands, or type any of the above to start exploring!
+                Type <span className="help-orange">'help'</span> to see a list of available commands, or type any of the above to start exploring!
               </div>
               <div className="terminal-footer">
-                Happy browsing! Type 'exit' to leave the terminal session.
+                Happy browsing! Type<span className="help-orange"> 'exit'</span> to leave the terminal session.
               </div>
-              <div className="terminal-divider">---------------------------------------------------</div>
+              <div className="h-line">---------------------------------------------------</div>
               <div className="terminal-input"></div>
             </div>
           );

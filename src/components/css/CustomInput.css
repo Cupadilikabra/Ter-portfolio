@@ -1,0 +1,36 @@
+.input-container {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    
+    width: 99%;
+  }
+  
+  .input {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    caret-color: transparent;
+    color: greenyellow;
+    
+  }
+  
+  .custom-caret {
+    position: absolute;
+    top: 20px;
+    width: 10px;
+    height: 2px;
+    background-color: red;
+    animation: blink 0.5s step-end infinite;
+    margin-left:5px;
+    
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }

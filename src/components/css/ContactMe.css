@@ -1,0 +1,49 @@
+a svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    fill: white;
+    transition: transform 0.3s ease;
+}
+a:hover svg {
+    fill: #d29512; /* LinkedIn Blue */
+    transform: scale(1.2);
+}
+
+
+
+
+ul{
+    list-style: none;
+}
+li{
+    margin-top: 0.5rem;
+
+    display: flex; /* Align SVG and text horizontally */
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+ul li a:hover {
+    transform: scale(1.2);
+}
+
+.phone-svg{
+    width: 34px;
+    height: 34px;
+    fill:#ffffff;
+   
+}
+
+
+.number{
+    font-weight: bold;
+    padding-left: 4px;
+}

@@ -1,94 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Geist+Mono:wght@100..900&family=VT323&display=swap');
 
-html{
-    background-color:#333;
-    padding: 1rem;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-body{
+html, body {
+  background-color: #333;
+  height: 100vh;
   margin: 0;
   padding: 0;
-  height: 100%;
+  font-size: 1.1rem;
+  overflow: auto;
+      
+  
 }
 
-.terminal{
-  white-space: pre-line;
-  font-family: "VT323", monospace;
+
+
+.cmd-exit{
+  color: red;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  font-size: 2rem;
+  
+}
+
+
+
+
+
+.command-name {
+  color: #d29512; 
+  font-weight: bold;
+} 
+
+.wmsg{
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+.cmd-output {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.5s forwards;
+
+  font-family: "VT323", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.5rem;
-  color: white;
-
-
-  overflow-y: auto;
-  height: 100vh;
-  scroll-behavior: smooth;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding: 1rem;
-
-} 
-/* .terminal {
-  display: flex;
-  flex-direction: column;
-  height: 100vh; 
-  padding: 1rem;
-  overflow: hidden;  
-  box-sizing: border-box;
-} */
-input{
-    background-Color: #333;
-    color: hsl(42, 93%, 49%);
-    border: none;
-    outline: none;
-    flex: 1;
-    padding: 5px;
-    font-Family: monospace;
-    font-Size: 16px;
-    margin-Left: 5px;
-    box-sizing: border-box;
+  font-size: 1.4rem;
+  color: azure;
 }
 
-
-.terminal input{
-    white-space: pre-line;
-    font-family: "VT323", monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.2rem;
-    padding-bottom: 2.0rem;
+.cmd-command{
+  color: #d29512;
 }
 
-.output {
-  flex-grow: 1; 
-  padding: 10px;
-  color: pink;
-  white-space: pre-wrap;
+.cmd-color{
+  color: hsl(180, 57%, 80%);
 }
 
-.terminal-msg{
-  overflow-y:auto;
+.terminal-output{
+  font-family: "VT323", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
 
-  padding: 1rem;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.5s forwards;
 }
 
-h1 {
-  font-family: "VT323", monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3rem;
-    text-align: center;
-    color: #66d9ef;  
-    margin: 20px 0;
-    flex-grow: 0;
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  
-  
-  .command-name {
-    color: #d29512; 
-    font-weight: bold;
-  }
+}
+
+.help-orange{
+  color: #d29512;
+}
+
+.h-line{
+  color: whitesmoke;
+}
+
+
+.terminal {
+  margin-left: 1.2rem;
+  padding-bottom: 1.2rem;
+
+}

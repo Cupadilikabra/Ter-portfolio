@@ -2,6 +2,9 @@ function Abme(){
     
     
       return (
+        <div>
+          <h1>About Me</h1>
+
         <p>Hello, I'm Endijs, a 26-year-old aspiring web developer hailing from
         Latvia. <br />I'm currently on a journey of self-discovery and learning
         in the exciting world of web development.<br />
@@ -29,7 +32,8 @@ function Abme(){
         into achievements.<br /><br />
         Thank you for visiting my portfolio. Feel free to reach out, share
         insights, or simply connect as I continue my learning adventure.</p>
-  
+        </div>
+    
       );
 }
 
