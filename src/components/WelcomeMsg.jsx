@@ -3,7 +3,7 @@
 function WelcomeMsg(){
 
     return(
-            <div className="terminal">
+            <div className="terminal1">
               <div className="terminal-header">
                 Welcome to [Endijs Lacis]'s Portfolio Terminal!
               </div>

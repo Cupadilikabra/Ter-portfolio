@@ -1,7 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useCaret } from "./hooks/useCaret";
 import './components/css/CustomInput.css';
+import './components/css/ThemeLight.css'
 import './Terminal.css';
+import './hooks/themeControl'
 
 import Commands from "./components/Commands";
 import WelcomeMsg from './components/WelcomeMsg';
@@ -9,6 +11,8 @@ import Abme from './components/Abme';
 import ContactMe from "./components/ContactMe";
 import Documents from "./components/Documents"
 import Time from"./components/Time"
+import { resetTheme, themeControl } from "./hooks/themeControl";
+
 
 function NewTerminal() {
   const [input, setInput] = useState('');
@@ -71,6 +75,11 @@ function NewTerminal() {
         sectionComponent = <ContactMe />;
         break;
 
+        case 'theme1':
+          output='This theme is set to ';
+          themeControl('light');
+         break;
+
         case 'time':
           output = '';
           sectionComponent = <Time command={command} />;
@@ -86,12 +95,16 @@ function NewTerminal() {
         setCommands([]);
         return;
 
+        case 'reset':
+          resetTheme()
+          return;
+
       case 'exit':
         setIsTerminalOpen(false);
         return;
 
       default:
-        output = <span style={{ color: '#8B0000' }}>Unknown command. Type <span style={{ color: '#d29512' }}>"help" </span> for available commands.</span>;
+        output = <span className="error-msg" style={{ color: '#8B0000' }}>Unknown command. Type <span  style={{ color: '#d29512' }}>"help" </span> for available commands.</span>;
       
     }
 
@@ -104,8 +117,9 @@ function NewTerminal() {
   if (!isTerminalOpen) return <div className="cmd-exit">Terminal Closed</div>;
 
   return (<>
+  
     <div ref={terminalRef} className="terminal" onClick={() => inputRef.current && inputRef.current.focus()}>
-      <h1>******* Portfolio Terminal</h1>
+      <h1 className="main-h">Welcome To Endijs Portfolio Terminal</h1>
       <p className="wmsg"><WelcomeMsg /></p>
       <div className="ta">
         {commands.map((cmd, index) => (
@@ -116,7 +130,7 @@ function NewTerminal() {
           </div>
         ))}
       </div>
-      <divc
+      <div
         className='input-container'
         style={{ "--caret-position": caretPosition }}
       >
@@ -133,7 +147,7 @@ function NewTerminal() {
           className="custom-caret"
           style={{ left: `${caretPosition}px` }}
         ></div>
-      </divc>
+      </div>
     </div>
   </>);
 }

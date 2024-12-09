@@ -17,6 +17,12 @@
     color: greenyellow;
     
   }
+/* 
+  body.light .input {
+
+    color: rgb(86, 6, 161);
+    
+  } */
   
   .custom-caret {
     position: absolute;

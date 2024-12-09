@@ -6,7 +6,7 @@ a svg {
     transition: transform 0.3s ease;
 }
 a:hover svg {
-    fill: #d29512; /* LinkedIn Blue */
+    fill: #d29512; 
     transform: scale(1.2);
 }
 
@@ -19,7 +19,7 @@ ul{
 li{
     margin-top: 0.5rem;
 
-    display: flex; /* Align SVG and text horizontally */
+    display: flex; 
     align-items: center;
 }
 

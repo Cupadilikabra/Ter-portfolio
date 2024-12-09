@@ -15,11 +15,11 @@ function Commands (){
             
               return (
                 <div>
-                  <h1>Available Commands</h1>
+                  <h1 className="avilable-commands">Available Commands</h1>
                   <ul>
                     {availableCommands.map((command, index) => (
                       <li key={index}>
-                        <span className="command-name">{command.name}</span>: {command.description}
+                        <span className="command-name">{command.name}</span>: <span className="command-description">{command.description}</span>
                       </li>
                     ))}
                   </ul>

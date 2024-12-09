@@ -1,0 +1,130 @@
+body.light{
+  background-color: #111
+ }
+
+  body.light .input {
+    color: #39FF14;
+    font-family: 'Courier New', monospace;
+    text-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14;
+    
+  }
+
+  body.light .terminal1{
+    color: #00FFFF;
+    font-family: 'Courier New', monospace;
+    text-shadow: 0 0 3px #00FFFF, 0 0 1px #00FFFF;
+  }
+  
+  body.light .help-orange{
+    color: #FFFF00;
+    font-weight: bold;
+  }
+
+  body.light .command-name {
+    color: #FFFF00; 
+    font-weight: bold;
+  } 
+  
+  body.light .h-line{
+    color: #E6E6FA;
+  }
+
+
+  body.light a svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    fill: white;
+    transition: transform 0.3s ease;
+}
+body.light a:hover svg {
+    fill: #4169E1; 
+        
+   
+}
+
+body.light .command-description{
+  color: #4B0082;
+}
+
+body.light .error-msg{
+  color: #FF0000;
+font-family: 'Courier New', monospace;
+text-shadow: 0 0 8px #FF0000, 0 0 15px #FF0000;
+
+}
+
+body.light .error-cmd{
+  color: #FFFF00;
+font-family: 'Courier New', monospace;
+text-shadow: 0 0 8px #FFFF00, 0 0 15px #FFFF00;
+}
+
+
+body.light .custom-caret {
+  position: absolute;
+  top: 20px;
+  width: 10px;
+  height: 2px;
+  background-color: #39FF14; 
+  animation: blink 0.5s step-end infinite, glow 1s ease-in-out infinite;
+  margin-left: 5px;
+  border-radius: 2px; 
+}
+
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+
+@keyframes glow {
+  0% {
+      box-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14, 0 0 15px #39FF14;
+  }
+  50% {
+      box-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14, 0 0 30px #39FF14;
+  }
+  100% {
+      box-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14, 0 0 15px #39FF14;
+  }
+}
+
+body.light a {
+  text-decoration: none;
+  color: #FFFFFF;
+  text-shadow: 0 0 5px #FFFF00, 0 0 10px #FFFF00; 
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+body.light a:hover {
+  color: #FF1493; 
+  transform: scale(1.1); 
+  text-shadow: 0 0 10px #FF1493, 0 0 20px #FF1493; 
+}
+
+body.light .avilable-commands{
+  color: #FF1493; 
+  text-shadow: 0 0 10px #FF1493, 0 0 20px #FF1493;
+  font-size: 2em;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    text-shadow: 0 0 10px #FF1493, 0 0 90px #FF1493, 0 0 30px #FF1493, 0 0 90px #FF1493;
+  }
+  50% {
+    text-shadow: 0 0 15px #FF1493, 0 0 25px #FF1493, 0 0 35px #FF1493, 0 0 80px #FF1493;
+  }
+}
+
+body.light .main-h{
+  color: #FF1493; /* Neon pink */
+}
+
+
+
