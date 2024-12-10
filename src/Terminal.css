@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Geist+Mono:wght@100..900&family=VT323&display=swap');
 
 html, body {
+  
   background-color: #333;
   height: 100vh;
   margin: 0;
   padding: 0;
   font-size: 1.1rem;
   overflow: auto;
-      
+  z-index:1;
+  
   
 }
 
@@ -60,7 +62,7 @@ html, body {
 }
 
 .cmd-color{
-  color: hsl(180, 57%, 80%);
+  color: hsl(180, 94%, 49%);
 }
 
 .terminal-output{
@@ -91,7 +93,29 @@ html, body {
 
 
 .terminal {
+
   margin-left: 1.2rem;
   padding-bottom: 1.2rem;
-
+  position: relative;     
+  z-index: 1;  
+  
+  
 }
+
+
+.blurryBackground {
+  position: fixed;           /* Full-page coverage */
+  top: 0;                    /* Start at the top */
+  left: 0;                   /* Start at the left */
+  width: 100vw;              /* Cover the full viewport width */
+  height: 100vh;             /* Cover the full viewport height */
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+  backdrop-filter: blur(2px);   /* Apply blur effect */
+  z-index: -1;               /* Place it behind other content */
+  pointer-events: none;      /* Allow interactions with elements underneath */
+}
+
+
+/* .ta{
+  background: rgba(0, 0, 0, 0.5)
+} */

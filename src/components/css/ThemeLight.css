@@ -1,5 +1,7 @@
 body.light{
-  background-color: #111
+  background-color: #111;
+  
+  
  }
 
   body.light .input {
@@ -10,9 +12,11 @@ body.light{
   }
 
   body.light .terminal1{
-    color: #00FFFF;
+    color: #0fe6e6;
     font-family: 'Courier New', monospace;
     text-shadow: 0 0 3px #00FFFF, 0 0 1px #00FFFF;
+   /* Apply blur effect to the background */
+   
   }
   
   body.light .help-orange{
@@ -44,7 +48,8 @@ body.light a:hover svg {
 }
 
 body.light .command-description{
-  color: #4B0082;
+  color: #00CED1; 
+  text-shadow: 0 0 1px #00CED1, 0 0 4px #00CED1; 
 }
 
 body.light .error-msg{
@@ -124,7 +129,37 @@ body.light .avilable-commands{
 
 body.light .main-h{
   color: #FF1493; /* Neon pink */
+
+  
 }
 
+
+body.light .pcGuy {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  white-space: pre;
+  color: #39FF14;
+  background-color: transparent;
+  padding: 10px;
+  text-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14, 0 0 15px #39FF14;
+  overflow-x: auto;
+
+  position: fixed;
+  top: 70%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: -1;                 
+
+  height: 100vh;              
+  width: 50vw;
+  background-color: transparent;
+}
+
+
+body.light .about{
+  color: #00CED1; 
+  text-shadow: 0 0 1px #00CED1, 0 0 4px #00CED1;
+
+}
 
 

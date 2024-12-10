@@ -1,0 +1,23 @@
+.pcGuy {
+    font-family: 'Courier New', Courier, monospace;  /* Retro monospace font */
+    font-size: 14px;             /* Compact font size for ASCII art */
+    white-space: pre;            /* Preserve whitespace formatting */
+    color: #D3D3D3;              /* Light grey color for the text */
+    background-color: transparent; /* Transparent background for ASCII art */
+    padding: 10px;               /* Padding around the ASCII art */
+    text-shadow: 0 0 5px #B0B0B0, 0 0 10px #B0B0B0, 0 0 15px #B0B0B0; /* Light grey glow */
+    overflow-x: auto;            /* Allow horizontal scrolling for long lines */
+
+    position: fixed;             /* Fixed position to keep it in place */
+    top: 70%;                    /* Center vertically */
+    right: 0;                    /* Align to the right side */
+    transform: translateY(-50%); /* Adjust position to true vertical center */
+    z-index: -1;                 /* Place the ASCII art behind other content */
+
+    height: 100vh;               /* Full height of the viewport */
+    width: 50vw;                 /* Take half the viewport width */
+    background-color: transparent; /* Ensure the art doesn’t have a solid color behind */
+}
+
+
+

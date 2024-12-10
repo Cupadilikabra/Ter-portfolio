@@ -3,9 +3,9 @@ function Abme(){
     
       return (
         <div>
-          <h1>About Me</h1>
+          <h1 className="avilable-commands">About Me</h1>
 
-        <p>Hello, I'm Endijs, a 26-year-old aspiring web developer hailing from
+        <p className="about">Hello, I'm Endijs, a 26-year-old aspiring web developer hailing from
         Latvia. <br />I'm currently on a journey of self-discovery and learning
         in the exciting world of web development.<br />
         As a beginner in this field, I may not have a wealth of professional

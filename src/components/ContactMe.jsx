@@ -3,7 +3,7 @@ import"./css/ContactMe.css"
 function ContactMe(){
     return (
     <div>
-        <h1>Contact me</h1>
+        <h1 className="avilable-commands">Contact me</h1>
         <ul>
             <li > 
                 <a href="https://www.facebook.com/endijs.lacis.58/"  target="_blank" rel="noopener noreferrer"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

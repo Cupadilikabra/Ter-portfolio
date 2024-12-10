@@ -5,6 +5,8 @@ import './components/css/ThemeLight.css'
 import './Terminal.css';
 import './hooks/themeControl'
 
+
+import Pcart from "./components/ASCII/Pcart"
 import Commands from "./components/Commands";
 import WelcomeMsg from './components/WelcomeMsg';
 import Abme from './components/Abme';
@@ -117,8 +119,7 @@ function NewTerminal() {
   if (!isTerminalOpen) return <div className="cmd-exit">Terminal Closed</div>;
 
   return (<>
-  
-    <div ref={terminalRef} className="terminal" onClick={() => inputRef.current && inputRef.current.focus()}>
+     <div ref={terminalRef} className="terminal" onClick={() => inputRef.current && inputRef.current.focus()}>
       <h1 className="main-h">Welcome To Endijs Portfolio Terminal</h1>
       <p className="wmsg"><WelcomeMsg /></p>
       <div className="ta">
@@ -148,6 +149,8 @@ function NewTerminal() {
           style={{ left: `${caretPosition}px` }}
         ></div>
       </div>
+      <Pcart />
+      <div className="blurryBackground"></div>
     </div>
   </>);
 }
