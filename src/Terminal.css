@@ -62,7 +62,7 @@ html, body {
 }
 
 .cmd-color{
-  color: hsl(180, 94%, 49%);
+  color: hsl(0, 0%, 75%);
 }
 
 .terminal-output{
@@ -104,15 +104,15 @@ html, body {
 
 
 .blurryBackground {
-  position: fixed;           /* Full-page coverage */
-  top: 0;                    /* Start at the top */
-  left: 0;                   /* Start at the left */
-  width: 100vw;              /* Cover the full viewport width */
-  height: 100vh;             /* Cover the full viewport height */
-  background: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
-  backdrop-filter: blur(2px);   /* Apply blur effect */
-  z-index: -1;               /* Place it behind other content */
-  pointer-events: none;      /* Allow interactions with elements underneath */
+  position: fixed;           
+  top: 0;                    
+  left: 0;                  
+  width: 100vw;              
+  height: 100vh;             
+  background: rgba(0, 0, 0, 0.4); 
+  backdrop-filter: blur(2px);   
+  z-index: -1;               
+  pointer-events: none;      
 }
 
 

@@ -5,7 +5,7 @@ import './components/css/ThemeLight.css'
 import './Terminal.css';
 import './hooks/themeControl'
 
-
+import Pcface from "./components/ASCII/Pcface"
 import Pcart from "./components/ASCII/Pcart"
 import Commands from "./components/Commands";
 import WelcomeMsg from './components/WelcomeMsg';
@@ -68,9 +68,14 @@ function NewTerminal() {
         break;
 
       case 'skills':
-        output = 'This is the Skills section.';
+        output = 'This is the Skills section. Soon...';
         sectionComponent = <Skills />;
         break;
+
+        case 'projects':
+          output = 'This is the projects section. Soon...';
+          sectionComponent = <Skills />;
+          break;
 
       case 'contact':
         output = '';
@@ -120,7 +125,7 @@ function NewTerminal() {
 
   return (<>
      <div ref={terminalRef} className="terminal" onClick={() => inputRef.current && inputRef.current.focus()}>
-      <h1 className="main-h">Welcome To Endijs Portfolio Terminal</h1>
+      <h1 className="main-h">Welcome To Endijs Portfolio Terminal<Pcface/></h1>
       <p className="wmsg"><WelcomeMsg /></p>
       <div className="ta">
         {commands.map((cmd, index) => (

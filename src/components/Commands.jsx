@@ -7,9 +7,12 @@ function Commands (){
                 { name: 'skills', description: 'Check out the technical skills I bring to the table.' },
                 { name: 'contact', description: 'Get in touch with me through email and social media.' },
                 { name: 'documents', description: 'Displays certifications, resumes, and other relevant documents showcasing qualifications and achievements.' },
+                { name: 'theme1', description: 'For more vivid experience.' },
                 { name: 'time', description: 'View current Time.' },
+                { name: 'reset', description: 'Reset theme to default' },
                 { name: 'clear', description: 'Clear the Terminal.' },
                 { name: 'exit', description: 'Exit the Terminal.' },
+                
                 
               ];
             

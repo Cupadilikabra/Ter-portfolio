@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Geist+Mono:wght@100..900&family=VT323&display=swap');
+
 body.light{
   background-color: #111;
   
@@ -15,7 +17,7 @@ body.light{
     color: #0fe6e6;
     font-family: 'Courier New', monospace;
     text-shadow: 0 0 3px #00FFFF, 0 0 1px #00FFFF;
-   /* Apply blur effect to the background */
+   
    
   }
   
@@ -128,7 +130,15 @@ body.light .avilable-commands{
 }
 
 body.light .main-h{
-  color: #FF1493; /* Neon pink */
+  font-family: "VT323", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff; 
+  text-shadow: 
+    0 0 5px #ffffff, 
+    0 0 10px #ffffff, 
+    0 0 20px #ffffff, 
+    0 0 40px #cccccc; 
 
   
 }
@@ -162,4 +172,16 @@ body.light .about{
 
 }
 
+body.light .pcface{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  display: inline-block;
+  color: #f5f5f5;
+  text-shadow: 
+  0 0 5px #00ffcc, /* Inner glow */
+  0 0 10px #00ffcc, /* Medium glow */
+  0 0 20px #00ffcc, /* Outer glow */
+  0 0 30px #00cc99, /* Deeper glow */
+  0 0 40px #00cc99; /* Strongest glow */
+}
 
