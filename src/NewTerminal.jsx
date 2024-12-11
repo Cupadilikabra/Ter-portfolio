@@ -74,7 +74,7 @@ function NewTerminal() {
 
         case 'projects':
           output = 'This is the projects section. Soon...';
-          sectionComponent = <Skills />;
+          sectionComponent = <Projects />;
           break;
 
       case 'contact':
@@ -160,7 +160,7 @@ function NewTerminal() {
   </>);
 }
 
-const Skills = () => <div>Skills Content Here</div>;
-const Contact = () => <div>Contact Content Here</div>;
+const Skills = () => <div>This is the Skills section. Soon...</div>;
+const Projects =() => <div>This is the Projects section. Soon...</div>
 
 export default NewTerminal;
